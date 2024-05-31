@@ -61,13 +61,14 @@ class PilhaEstacionamento extends CapacidadeEstacionamento {
         }
 
         while (!tempPilha.isEmpty()) {
-            pilhaEstacionamento.push(pilhaEstacionamento.pop());
+            pilhaEstacionamento.push(tempPilha.pop());
         }
 
         if (!encontrado) {
             System.out.println("Carro com placa " + placa + " não encontrado no estacionamento.");
         }
     }
+
 
     @Override
     public void consultarCarro(final String placa) {
